@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Resume default profile
+profile.json
+
+# vscode configuration
+.vscode/settings.json
