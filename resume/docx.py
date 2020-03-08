@@ -5,7 +5,7 @@ from docx import Document
 class ResumeDocx:
     """A resume generator for Microsoft word"""
 
-    def __init__(self, profile):
+    def __init__(self, profile=None):
         """Initialize ResumeDocx instance"""
         self._document = None
         self._profile = profile
@@ -16,19 +16,7 @@ class ResumeDocx:
             self._document = Document()
         return self._document
     
-
-        
-
     def generate(self):
-        print(f"{__name__} called.")
-        return True
-
-if __name__ == '__main__':
-    with open('./profile.json') as file:
-        profile = json.load(file)
-    
-    resume_docx = ResumeDocx(profile)
-    resume_docx.generate()
-
-
-
+        # Add Heading
+        self.document.add_heading("Sajal Narayan Shrestha", level=0)
+        self.document.save("resume.docx")
