@@ -8,4 +8,5 @@ class ResumePdf:
         pass
 
     def generate(self):
-        pass
+        print(f"{__name__} called.")
+        return True
